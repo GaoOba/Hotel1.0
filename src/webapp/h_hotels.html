@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酒店与度假酒店</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script type="application/javascript" src="js/jquery-1.12.2.js"></script>
+    <script type="application/javascript" src="layui/layui.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<script type="text/css">
+
+
+</script>
+<body>
+<!--顶部-->
+<div class="row">
+    <div class="col-lg-12" >
+        <nav class="navbar navbar-inverse" style="margin-top: 10px;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">首页</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="login.html">登陆</a>
+                        </li>
+                        <li>
+                            <a href="regist.html">立即加入</a>
+                        </li>
+                        <li>
+                            <a href="h_book.html">查找预定</a>
+                        </li>
+                        <li>
+                            <a href="#">app</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-form navbar-right" role="search">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="">个人中心</a>
+                            </li>
+                            <li>
+                                <a href="">消息</a>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="row" style="text-align: center">
+    <div class="col-lg-12">
+
+        <div id="d1"><img src="imgs/logo_20190223110531.png"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <ul class="layui-nav" lay-filter="">
+            <li class="layui-nav-item"><a href="">酒店与度假酒店</a></li>
+            <li class="layui-nav-item layui-this"><a href="h_youhui.html">优惠</a></li>
+            <li class="layui-nav-item"><a href="">餐厅与酒吧</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">婚宴与庆典</a>
+                <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                    <dd><a href="">普通版</a></dd>
+                    <dd><a href="">豪华版</a></dd>
+                    <dd><a href="">奢华版</a></dd>
+                    <dd><a href="">私人定制版</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="">会议与宴会</a></li>
+            <li class="layui-nav-item"><a href="">贵宾金环会</a></li>
+        </ul>
+    </div>
+
+</div>
+<div class="row">
+    <div>
+        <div class="col-lg-12">
+
+            <div><img src="imgs/gg.png" style="height: 300px; width: 100%;margin-left:0px"></div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 20px">
+    <div class="col-lg-offset-1">
+
+        <div>
+            <p><i class="layui-icon" style="font-size: 30px; color: #000000;">热门酒店</i></p>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-top: 20px">
+    <div class="col-lg-4">
+        <div class="row">
+            <div class="col-lg-offset-2">
+                <img src="imgs/12.jpg" style="height: 200px; width: 380px">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px">
+            <div class="col-lg-offset-2">
+                <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">包头香格里拉大酒店</i> </p>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="row" style="margin-top: 10px">
+            <div class="col-lg-offset-2">
+                <p><i class="layui-icon layui-icon-location" style="color:#00FF00">中国</i> </p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5px">
+            <div class="col-lg-offset-2">
+                <hr class="layui-bg-black" style="width: 380px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-offset-2" style="float:right">
+
+                <img src="imgs/logo2.png">
+            </div>
+        </div>
+
+    </div>
+    <div class="col-lg-4">
+        <div class="row">
+            <div class="col-lg-offset-2">
+                <img src="imgs/17.jpg" style="height: 200px; width: 380px">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px">
+            <div class="col-lg-offset-2">
+                <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">伦敦香格里拉大酒店</i> </p>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="row" style="margin-top: 10px">
+            <div class="col-lg-offset-2">
+                <p><i class="layui-icon layui-icon-location" style="color:#00FF00">英国</i> </p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5px">
+            <div class="col-lg-offset-2">
+                <hr class="layui-bg-black" style="width: 380px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-offset-2" style="float:right">
+
+                <img src="imgs/logo2.png">
+            </div>
+        </div>
+
+    </div>
+    <div class="col-lg-4">
+        <div class="row">
+            <div class="col-lg-offset-2">
+                <img src="imgs/16.jpg" style="height: 200px; width: 380px">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px">
+            <div class="col-lg-offset-2">
+                <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">新加坡香格里拉大酒店</i> </p>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="row" style="margin-top: 10px">
+            <div class="col-lg-offset-2">
+                <p><i class="layui-icon layui-icon-location" style="color:#00FF00">新加坡</i> </p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5px">
+            <div class="col-lg-offset-2">
+                <hr class="layui-bg-black" style="width: 380px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-offset-2" style="float:right">
+
+                <img src="imgs/logo2.png">
+            </div>
+        </div>
+
+    </div>
+    <div class="row" style="margin-top: 30px">
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-offset-2">
+                    <img src="imgs/13.jpg" style="height: 200px; width: 380px">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <div class="col-lg-offset-2">
+                    <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">香港香格里拉大酒店</i> </p>
+                </div>
+            </div>
+            <div>
+
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <div class="col-lg-offset-2">
+                    <p><i class="layui-icon layui-icon-location" style="color:#00FF00">中国</i> </p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5px">
+                <div class="col-lg-offset-2">
+                    <hr class="layui-bg-black" style="width: 380px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-offset-2" style="float:right">
+
+                    <img src="imgs/logo2.png">
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-offset-2">
+                    <img src="imgs/15.jpg" style="height: 200px; width: 380px">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <div class="col-lg-offset-2">
+                    <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">东京香格里拉大酒店</i> </p>
+                </div>
+            </div>
+            <div>
+
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <div class="col-lg-offset-2">
+                    <p><i class="layui-icon layui-icon-location" style="color:#00FF00">日本</i> </p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5px">
+                <div class="col-lg-offset-2">
+                    <hr class="layui-bg-black" style="width: 380px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-offset-2" style="float:right">
+
+                    <img src="imgs/logo2.png">
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-offset-2">
+                    <img src="imgs/12.jpg" style="height: 200px; width: 380px">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <div class="col-lg-offset-2">
+                    <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">悉尼香格里拉大酒店</i> </p>
+                </div>
+            </div>
+            <div>
+
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <div class="col-lg-offset-2">
+                    <p><i class="layui-icon layui-icon-location" style="color:#00FF00">澳大利亚</i> </p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5px">
+                <div class="col-lg-offset-2">
+                    <hr class="layui-bg-black" style="width: 380px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-offset-2" style="float:right">
+
+                    <img src="imgs/logo2.png">
+                </div>
+            </div>
+
+        </div>
+</div>
+    <div style="background-color:#000000; margin-top: 50px">
+        <div class="row" style="margin-top: 10px">
+            <!-- 部分：一 -->
+            <div class="col-md-3">
+                <p>查找或预定</p>
+                <ul><i class="layui-icon"; style="color: #f9f9f9; font-size: 10px">
+                    <li>我们的目的地</li>
+                    <li>查找预定</li>
+                    <li>会议与宴会</li>
+                    <li>餐厅与酒吧</li>
+                </i></ul>
+            </div>
+            <!-- 部分：二 -->
+            <div class="col-md-3">
+                <p>贵宾金环会</p>
+                <ul><i class="layui-icon"; style="color: #f9f9f9; font-size: 10px">
+                    <li>会员计划概述</li>
+                    <li>加入贵宾金环会</li>
+                    <li>我的账户</li>
+                    <li>尚桌计划</li>
+                    <li>常见问题</li>
+                </i></ul>
+            </div>
+            <!-- 部分：三 -->
+            <div class="col-md-3">
+                <p>关于香格里拉</p>
+                <ul><i class="layui-icon"; style="color: #f9f9f9; font-size: 10px">
+                    <li>关于我们</li>
+                    <li>我们的酒店品牌</li>
+                    <li>香格里拉中心</li>
+                    <li>香格里拉公寓</li>
+                    <li>联络我们</li>
+                </i></ul>
+            </div>
+            <div class="col-md-3">
+                <h4>开启无限精彩</h4>
+                <h4>畅游寰宇,尽在掌中</h4>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="imgs/7.png">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="imgs/8.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

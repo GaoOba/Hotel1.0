@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎来到古香园温泉度假酒店</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script type="application/javascript" src="js/jquery-1.12.2.js"></script>
+    <script type="application/javascript" src="layui/layui.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<style type="text/css">
+
+
+    #d1{
+        text-align: center;
+    }
+    .pc_imgBox{
+        display: block;
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        background-position:  center;
+        background-repeat: no-repeat;
+    }
+
+
+</style>
+<body>
+<div class="container" style="background-color: #FFFFFF">
+    <!--顶部-->
+    <div class="row">
+        <div class="col-lg-12" >
+            <nav class="navbar navbar-inverse" style="margin-top: 10px;">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">首页</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="login.html">登陆</a>
+                            </li>
+                            <li>
+                                <a href="regist.html">立即加入</a>
+                            </li>
+                            <li>
+                                <a href="h_book.html">查找预定</a>
+                            </li>
+                            <li>
+                                <a href="#">app</a>
+                            </li>
+                        </ul>
+                        <div class="navbar-form navbar-right" role="search">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="login.html">个人中心</a>
+                                </li>
+                                <li>
+                                    <a href="regist.html">消息</a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div id="d1"><img src="imgs/logo_20190223110531.png"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="layui-nav" lay-filter="">
+                <li class="layui-nav-item"><a href="h_hotels.html">酒店与度假酒店</a></li>
+                <li class="layui-nav-item layui-this"><a href="h_youhui.html">优惠</a></li>
+                <li class="layui-nav-item"><a href="">餐厅与酒吧</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">婚宴与庆典</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">普通版</a></dd>
+                        <dd><a href="">豪华版</a></dd>
+                        <dd><a href="">奢华版</a></dd>
+                        <dd><a href="">私人定制版</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">会议与宴会</a></li>
+                <li class="layui-nav-item"><a href="">贵宾金环会</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!--轮播图-->
+    <div class="row">
+        <div class="col-lg-12">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- 指示器 -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播图片及说明文字 -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="#" class="pc_imgBox" style="background-image: url('imgs/6.jpg')"></a>
+            </div>
+
+            <div class="item">
+                <a href="#" class="pc_imgBox" style="background-image: url('imgs/2.jpg')"></a>
+            </div>
+            <div class="item">
+                <a href="#" class="pc_imgBox" style="background-image: url('imgs/3.jpg')"></a>
+            </div>
+        </div>
+        <!-- 控制按钮：左右切换 -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+        </div>
+    </div>
+    <div class="row" style="height: 100px" />
+        <div class="col-lg-12" style="text-align: center">
+
+            <div class="input-group col-md-3" style="margin-top:5px; positon:relative">
+                <input type="text" class="form-control"; placeholder="请输入酒店城市" style="width: 200px"/>
+                <span class="input-group-btn">
+                     <button class="btn btn-info btn-search">查找</button>
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <p style="font-size: larger" id="d1">
+                <i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">众多礼物任你享</i>
+            </p>
+
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 30px">
+        <div class="col-lg-6" style="margin-top: 20px">
+            <p>
+                <i class="layui-icon"; style="font-size: 20px; color:#c9302c">贵宾金环会,时刻回馈您的忠实回顾</i>
+            </p>
+            <h4 style="margin-top: 20px">
+                <span>贵宾vip每次与我们相遇,都会给你不一样的待遇,给你不一样的体验.如果你还不是vip的话,就赶快加入我们吧</span>
+            </h4>
+            <h4 style="margin-top: 20px">
+                <button type="button" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 黄金VIP
+                </button>
+                <button type="button" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-plane" aria-hidden="true"></span> 翡翠VIP
+                </button>
+                <button type="button" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> 钻石VIP
+                </button>
+            </h4>
+            <h3 style="margin-top: 20px">
+                <button class="layui-btn layui-btn-lg layui-btn-normal"><a href="h_youhui.html">了解更多</a></button>
+            </h3>
+        </div>
+        <div class="col-lg-6">
+            <img id="img" src="imgs/3.jpg" onmouseover="bigger()" onmouseout="smaller()" style="width: 550px; height: 250px"/>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 60px">
+        <div class="col-lg-12">
+                <p style="font-size: larger; text-align: center">
+                    <i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">我们的品牌</i>
+                </p>
+                <h3 style="text-align: center">
+                    <span><i class="layui-icon" style="font-size: 10px; color: chocolate">香格里拉旗下遍布77个国家和地区,700多个目的地和100多家酒店和度假酒店</i></span>
+                </h3>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 60px">
+
+        <div class="col-lg-6" style="margin-top: 20px">
+            <img src="imgs/4.jpg" style="width: 550px; height: 250px"/>
+        </div>
+        <div class="col-lg-6">
+            <p style="margin-top: 30px">
+                <i class="layui-icon"; style="font-size: 20px; color:#c9302c">香格里拉酒店与度假酒店</i>
+            </p>
+            <h4 style="margin-top: 30px">
+                <span>在宁谧的环境下，于城市和度假旅游胜地享受变革性的服务</span>
+            </h4>
+
+            <h3 style="margin-top: 30px">
+                <button class="layui-btn layui-btn-lg layui-btn-normal"><a href="h_hotels.html">了解更多</a></button>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 60px">
+        <div class="col-lg-12">
+            <p style="font-size: larger; text-align: center">
+                <i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">婚礼与宴会</i>
+            </p>
+            <h3 style="text-align: center">
+                <span><i class="layui-icon" style="font-size: 10px; color: chocolate">从优美的地点到一应俱全的商业设备，我们四个不同的品牌都为您提供适合您独特会宴的场所</i></span>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 30px">
+        <div class="col-lg-6" style="margin-top: 20px">
+            <p>
+                <i class="layui-icon"; style="font-size: 20px; color:#c9302c">婚礼与宴会</i>
+            </p>
+            <h4 style="margin-top: 20px">
+                <span>将您每一次的会议与宴会交给我们策划，能助您打造愉快与充满成效的难忘活动体验。</span>
+            </h4>
+
+            <h3 style="margin-top: 20px">
+                <button class="layui-btn layui-btn-lg layui-btn-normal">了解更多</button>
+            </h3>
+        </div>
+        <div class="col-lg-6">
+            <img src="imgs/9.jpg" style="width: 550px; height: 250px"/>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="background-color:#000000; margin-top: 50px">
+    <div class="row" style="margin-top: 10px">
+        <!-- 部分：一 -->
+        <div class="col-md-3">
+            <p>查找或预定</p>
+                <ul><i class="layui-icon"; style="color: #f9f9f9; font-size: 10px">
+                        <li>我们的目的地</li>
+                        <li>查找预定</li>
+                        <li>会议与宴会</li>
+                        <li>餐厅与酒吧</li>
+                </i></ul>
+        </div>
+        <!-- 部分：二 -->
+        <div class="col-md-3">
+            <p>贵宾金环会</p>
+            <ul><i class="layui-icon"; style="color: #f9f9f9; font-size: 10px">
+                <li>会员计划概述</li>
+                <li>加入贵宾金环会</li>
+                <li>我的账户</li>
+                <li>尚桌计划</li>
+                <li>常见问题</li>
+            </i></ul>
+        </div>
+        <!-- 部分：三 -->
+        <div class="col-md-3">
+            <p>关于香格里拉</p>
+            <ul><i class="layui-icon"; style="color: #f9f9f9; font-size: 10px">
+                <li>关于我们</li>
+                <li>我们的酒店品牌</li>
+                <li>香格里拉中心</li>
+                <li>香格里拉公寓</li>
+                <li>联络我们</li>
+            </i></ul>
+        </div>
+        <div class="col-md-3">
+            <h4>开启无限精彩</h4>
+            <h4>畅游寰宇,尽在掌中</h4>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="imgs/7.png">
+                </div>
+                <div class="col-lg-3">
+                    <img src="imgs/8.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    //注意：导航 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function(){
+        var element = layui.element;
+
+        //…
+    });
+</script>
+<script type="text/javascript">
+
+    var img = document.getElementById('img');
+
+    function bigger(){
+        img.style.width = '700px';  img.style.height = '400px';
+    }
+
+    function smaller(){
+        img.style.width = '550px';  img.style.height = '250px';
+    }
+
+</script>
+</body>
+</html>

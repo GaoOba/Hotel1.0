@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优惠</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script type="application/javascript" src="js/jquery-1.12.2.js"></script>
+    <script type="application/javascript" src="layui/layui.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+    <script type="application/javascript" src="js/bootstrap-datetimepicker.js"></script>
+    <script type="application/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+
+</head>
+
+<body>
+
+<div style="background-color: #FFFFFF">
+    <!--顶部-->
+    <div class="row">
+        <div class="col-lg-12" >
+            <nav class="navbar navbar-inverse" style="margin-top: 10px;">
+                <div class="container-fluid" style="height: 20px">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">首页</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="login.html">登陆</a>
+                            </li>
+                            <li>
+                                <a href="regist.html">立即加入</a>
+                            </li>
+                            <li>
+                                <a href="h_book.html">查找预定</a>
+                            </li>
+                            <li>
+                                <a href="#">app</a>
+                            </li>
+                        </ul>
+                        <div class="navbar-form navbar-right" role="search">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="">个人中心</a>
+                                </li>
+                                <li>
+                                    <a href="">消息</a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div id="d1" style="text-align: center"><img src="imgs/logo_20190223110531.png"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="layui-nav" lay-filter="">
+                <li class="layui-nav-item"><a href="h_hotels.html">酒店与度假酒店</a></li>
+                <li class="layui-nav-item layui-this"><a href="">优惠</a></li>
+                <li class="layui-nav-item"><a href="">餐厅与酒吧</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">婚宴与庆典</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">普通版</a></dd>
+                        <dd><a href="">豪华版</a></dd>
+                        <dd><a href="">奢华版</a></dd>
+                        <dd><a href="">私人定制版</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">会议与宴会</a></li>
+                <li class="layui-nav-item"><a href="">贵宾金环会</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="row" style="margin-top: 30px">
+            <div class="col-lg-offset-2">
+                <p><i class="layui-icon" style="font-size: 30px; color: #1E9FFF">香格里拉优惠</i></p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-lg-offset-2">
+                <h4>悦享我们为您特别定字别的优惠与套餐,探索香格里拉,即可选择您心仪的目的地</h4>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 60px">
+            <div class="col-lg-offset-2">
+                <div class="input-group">
+                    <input type="text" class="glyphicon glyphicon-search" placeholder="目的地" style="border-color: #1E9FFF">
+                    <button class="glyphicon glyphicon-search" style="width: 50px; background-color: #00FF00"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 20px">
+            <div class="col-lg-offset-2">
+                <div>
+                    <input  name="entryDate" placeholder="请选择入住时间" id="blrz-entry-date-start" type="text" style="border-color: #1E9FFF">
+                    <span>-</span>
+                    <input  name="entryDate" placeholder="请选择退房时间" id="blrz-entry-date-start2" type="text" style="border-color: #1E9FFF">
+                    <button class="glyphicon glyphicon-search" style="width: 50px; background-color: #c9302c"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6" style="margin-top: 40px">
+        <div class="col-lg-12">
+            <img src="imgs/22.jpg" style="height: 250px">
+        </div>
+    </div>
+</div>
+
+
+    <div class="row" style="text-align: center; margin-top: 30px">
+        <div class="col-lg-12">
+            <i class="layui-icon" style="font-size:30px; color: #1E9FFF">推荐优惠</i>
+        </div>
+
+    </div>
+    <div class="row" style="margin-top: 30px">
+        <div class="col-lg-12">
+            <div class="layui-carousel" id="test1">
+                <div carousel-item>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-offset-2">
+                                    <img src="imgs/24.jpg" style="height: 200px; width: 380px">
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div>
+                                    <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">商务套餐</i> </p>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div>
+                                    <p>享受超级优惠,提升您的下榻体验</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 5px">
+                                <div class="col-lg-offset-2">
+                                    <hr class="layui-bg-black" style="width: 380px">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-offset-2">
+                                    <img src="imgs/14.jpg" style="height: 200px; width: 380px">
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div>
+                                    <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">Weekend Package</i> </p>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div class="col-lg-offset-2">
+                                    <p>Plan an exquisite weekend getaway and get more benefits.</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 5px">
+                                <div class="col-lg-offset-2">
+                                    <hr class="layui-bg-black" style="width: 380px">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-offset-2">
+                                    <img src="imgs/16.jpg" style="height: 200px; width: 380px">
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div>
+                                    <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">提前14天预订</i> </p>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div class="col-lg-offset-2">
+                                    <p>提前14天预订客房，即可以“提前预订价格”节省15%优惠。</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 5px">
+                                <div class="col-lg-offset-2">
+                                    <hr class="layui-bg-black" style="width: 380px">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-offset-2">
+                                    <img src="imgs/12.jpg" style="height: 200px; width: 380px">
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div>
+                                    <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">在毛里求斯多住两晚</i> </p>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div class="col-lg-offset-2">
+                                    <p>5月31日之前预订毛里求斯香格里拉度假酒店，只需支付5晚房费即可一次性入住7晚。</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 5px">
+                                <div class="col-lg-offset-2">
+                                    <hr class="layui-bg-black" style="width: 380px">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-offset-2">
+                                    <img src="imgs/23.jpg" style="height: 200px; width: 380px">
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div>
+                                    <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">在阿曼多住两晚</i> </p>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div class="col-lg-offset-2">
+                                    <p>5月31日之前预订阿曼香格里拉Barr Al Jissah度假酒店，只需支付5晚房费即可一次性入住7晚。</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 5px">
+                                <div class="col-lg-offset-2">
+                                    <hr class="layui-bg-black" style="width: 380px">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-offset-2">
+                                    <img src="imgs/16.jpg" style="height: 200px; width: 380px">
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div>
+                                    <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">在马斯喀特多住两晚</i> </p>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div class="col-lg-offset-2">
+                                    <span class="glyphicon glyphicon-plane" aria-hidden="true"></span> 翡翠VIP
+
+                                    <p>5月31日之前预订，只需支付5晚房费即可一次性入住7晚。</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 5px">
+                                <div class="col-lg-offset-2">
+                                    <hr class="layui-bg-black" style="width: 380px">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-offset-2">
+                                    <img src="imgs/15.jpg" style="height: 200px; width: 380px">
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div>
+                                    <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">在雅加达住4付3</i> </p>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div class="col-lg-offset-2" style="text-align: center">
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 黄金VIP
+                                    <p>现在预订，即可获赠第4晚！贵宾金环会会员专属</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 5px">
+                                <div class="col-lg-offset-2">
+                                    <hr class="layui-bg-black" style="width: 380px">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-offset-2">
+                                    <img src="imgs/17.jpg" style="height: 200px; width: 380px">
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div>
+                                    <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">在马尔代夫多住两晚</i> </p>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div class="col-lg-offset-2">
+                                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> 钻石VIP
+
+                                    <p>5月31日之前预订，只需支付5晚房费即可一次性入住7晚。</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 5px">
+                                <div class="col-lg-offset-2">
+                                    <hr class="layui-bg-black" style="width: 380px">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-offset-2">
+                                    <img src="imgs/16.jpg" style="height: 200px; width: 380px">
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div>
+                                    <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">豪华套餐套餐</i> </p>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div class="row" style="margin-top: 10px; text-align: center">
+                                <div>
+                                    <p>享受贵宾级优惠，提升您的下榻体验</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 5px">
+                                <div class="col-lg-offset-2">
+                                    <hr class="layui-bg-black" style="width: 380px">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row" style="text-align: center; margin-top: 30px">
+        <div class="col-lg-12">
+            <i class="layui-icon" style="font-size:30px; color: #1E9FFF">探索所有优惠</i>
+        </div>
+
+    </div>
+
+    <div class="row" style="margin-top: 50px">
+        <div class="col-lg-12">
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-offset-2">
+                        <img src="imgs/21.jpg" style="height: 200px; width: 380px">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10px; text-align: center">
+                    <div>
+                        <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">周末优惠</i> </p>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <div class="row" style="margin-top: 10px; text-align: center">
+                    <div class="col-lg-offset-2">
+                        <p>从壮丽的山峰与葱郁的自然环境，到原始海滩与都市景观，选择我们精彩的优惠套餐欢度愉快周末。</p>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px">
+                    <div class="col-lg-offset-2">
+                        <hr class="layui-bg-black" style="width: 380px">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px; text-align: center">
+                    <button class="layui-btn layui-btn-radius layui-btn-warm">查看所有的优惠</button>
+                </div>
+
+
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-offset-2">
+                        <img src="imgs/22.jpg" style="height: 200px; width: 380px">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10px; text-align: center">
+                    <div>
+                        <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">运动与休闲优惠</i> </p>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <div class="row" style="margin-top: 10px; text-align: center">
+                    <div class="col-lg-offset-2">
+                        <p>优惠礼遇旨在为您提供优质健康与健身服务，打造充满生气的的住宿体验。</p>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px">
+                    <div class="col-lg-offset-2">
+                        <hr class="layui-bg-black" style="width: 380px">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px; text-align: center">
+                    <button class="layui-btn layui-btn-radius layui-btn-warm">查看所有的优惠</button>
+                </div>
+
+
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-offset-2">
+                        <img src="imgs/17.jpg" style="height: 200px; width: 380px">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10px; text-align: center">
+                    <div>
+                        <p><i class="layui-icon layui-icon-rate-solid lay" style="color: #1E9FFF">住宿优惠</i> </p>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <div class="row" style="margin-top: 10px; text-align: center">
+                    <div class="col-lg-offset-2">
+                        <p>无论是大型商业活动还是短暂的休闲度假，选择超值优惠套餐，享受丰富下榻体验和收获精彩纷呈的旅行回忆。</p>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px">
+                    <div class="col-lg-offset-2">
+                        <hr class="layui-bg-black" style="width: 380px">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px; text-align: center">
+                    <button class="layui-btn layui-btn-radius layui-btn-warm">查看所有的优惠</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+<div style="background-color:#000000; margin-top: 50px">
+    <div class="row" style="margin-top: 10px">
+        <!-- 部分：一 -->
+        <div class="col-md-3">
+            <p>查找或预定</p>
+            <ul><i class="layui-icon"; style="color: #f9f9f9; font-size: 10px">
+                <li>我们的目的地</li>
+                <li>查找预定</li>
+                <li>会议与宴会</li>
+                <li>餐厅与酒吧</li>
+            </i></ul>
+        </div>
+        <!-- 部分：二 -->
+        <div class="col-md-3">
+            <p>贵宾金环会</p>
+            <ul><i class="layui-icon"; style="color: #f9f9f9; font-size: 10px">
+                <li>会员计划概述</li>
+                <li>加入贵宾金环会</li>
+                <li>我的账户</li>
+                <li>尚桌计划</li>
+                <li>常见问题</li>
+            </i></ul>
+        </div>
+        <!-- 部分：三 -->
+        <div class="col-md-3">
+            <p>关于香格里拉</p>
+            <ul><i class="layui-icon"; style="color: #f9f9f9; font-size: 10px">
+                <li>关于我们</li>
+                <li>我们的酒店品牌</li>
+                <li>香格里拉中心</li>
+                <li>香格里拉公寓</li>
+                <li>联络我们</li>
+            </i></ul>
+        </div>
+        <div class="col-md-3">
+            <h4>开启无限精彩</h4>
+            <h4>畅游寰宇,尽在掌中</h4>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="imgs/7.png">
+                </div>
+                <div class="col-lg-3">
+                    <img src="imgs/8.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/static/build/layui.js"></script>
+<script>
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            ,width: '100%' //设置容器宽度
+            ,arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
+<script type="application/javascript">
+    $("#blrz-entry-date-start").datetimepicker({//选择年月日
+        format: 'yyyy-mm-dd',
+        language: 'zh-CN',
+        weekStart: 1,
+        todayBtn: 1,//显示‘今日’按钮
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,  //Number, String. 默认值：0, 'hour'，日期时间选择器所能够提供的最精确的时间选择视图。
+
+        clearBtn:true,//清除按钮
+
+        forceParse: 0
+    });
+    $("#blrz-entry-date-start2").datetimepicker({//选择年月日
+        format: 'yyyy-mm-dd',
+        language: 'zh-CN',
+        weekStart: 1,
+        todayBtn: 1,//显示‘今日’按钮
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,  //Number, String. 默认值：0, 'hour'，日期时间选择器所能够提供的最精确的时间选择视图。
+
+        clearBtn:true,//清除按钮
+
+        forceParse: 0
+    });
+</script>
+</body>
+</html>
